@@ -6,10 +6,7 @@ require('dotenv').config();
 // 接続情報を設定
 const { MongoClient } = require("mongodb");
 const uri = process.env.MONGODB_URI;
-const client = new MongoClient(uri, {
-    useUnifiedTopology: true,
-    tls: true  // SSL/TLSを有効化
-  });
+const client = new MongoClient(uri);
 
 // corsミドルウェアを使用
 router.use(cors());
