@@ -14,7 +14,7 @@ var notes_from_bRouter = require('./routes/notes_from_b');
 
 var app = express();
 
-// view engine setup設定
+// view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 app.use('/hello', helloRouter);
